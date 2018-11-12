@@ -4,15 +4,43 @@
     <title>Jeff's Amazing Calculator</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" rel="stylesheet">
   </head>
   <body>
     <div id="container">
         <header>
-            <h1>Whooo, nice!</h1>
+            <h1>Whooo, nice calculator!</h1>
         </header>
-        <div class="main">
+        <div id="calculator">
+          <div id="model">
+            <p>Jeff's awesome calculator</p>
+          </div>
+          <div id="screen">
+            <p>result is normally displayed here</p>
+          </div>
+          <div id="keypads">
+            <div class='number'>7</div>
+            <div class='number'>8</div>
+            <div class='number'>9</div>
+            <div class="parenthesis">(</div>  
+            <div class="parenthesis">)</div>
+            <div class='number'>4</div>
+            <div class='number'>5</div>
+            <div class='number'>6</div>
+            <div class="operator">+</div>
+            <div class="operator">-</div>
+            <div class='number'>1</div>
+            <div class='number'>2</div>
+            <div class='number'>3</div>
+            <div class="operator">x</div>
+            <div class="operator">%</div>            
+            <div class='number'>00</div>
+            <div class='number'>0</div>
+            <div class='number'>.</div>
+            <div id="clear">C</div>
+            <div id="result">=</div>
+          </div>
         </div>
     </div>
     <script src="js/operations.js"></script>
