@@ -43,14 +43,17 @@ hmtl, body{
     margin-top:4px;
     margin-bottom:10px;
     border-radius:10px;
+    font-family: Orbitron;
+    /* direction: rtl; */
+    width:100%;
 }
 
-#screen p{
+/* #screen input{
     margin-top:0;
     margin-bottom:0;
     padding-right: 10px;
-    font-family: Orbitron;
-}
+    text-align: right;
+} */
 
 .number{
     background-color: #768bb1;
@@ -69,6 +72,10 @@ hmtl, body{
     border-radius:12px;
     font-size: 30px;
     line-height:90px;
+}
+
+#keypads:hover{
+    cursor: pointer;
 }
 
 .parenthesis{

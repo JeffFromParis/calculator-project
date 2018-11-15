@@ -18,33 +18,33 @@
           <div id="model">
             <p>Jeff's awesome calculator</p>
           </div>
-          <div id="screen">
-            <p>result is displayed here</p>
-          </div>
+          <input id="screen" value=0>
           <div id="keypads">
-            <div class='number'>7</div>
-            <div class='number'>8</div>
-            <div class='number'>9</div>
-            <div class="parenthesis">(</div>  
-            <div class="parenthesis">)</div>
-            <div class='number'>4</div>
-            <div class='number'>5</div>
-            <div class='number'>6</div>
-            <div class="operator">+</div>
-            <div class="operator">-</div>
-            <div class='number'>1</div>
-            <div class='number'>2</div>
-            <div class='number'>3</div>
-            <div class="operator">x</div>
-            <div class="operator">%</div>            
-            <div class='number'>00</div>
-            <div class='number'>0</div>
-            <div class='number'>.</div>
-            <div id="clear">C</div>
-            <div id="result">=</div>
+            <div class='number' onclick="newInput(7)">7</div>
+            <div class='number' onclick="newInput(8)">8</div>
+            <div class='number' onclick="newInput(9)">9</div>
+            <div class="parenthesis" onclick="newInput('(')">(</div>  
+            <div class="parenthesis" onclick="newInput(')')">)</div>
+            <div class='number' onclick="newInput(4)">4</div>
+            <div class='number' onclick="newInput(5)">5</div>
+            <div class='number' onclick="newInput(6)">6</div>
+            <div class="operator" onclick="newInput('+')">+</div>
+            <div class="operator" onclick="newInput('-')">-</div>
+            <div class='number' onclick="newInput(1)">1</div>
+            <div class='number' onclick="newInput(2)">2</div>
+            <div class='number' onclick="newInput(3)">3</div>
+            <div class="operator" onclick="newInput('*')">*</div>
+            <div class="operator" onclick="newInput('/')">/</div>            
+            <div class='number' onclick="newInput('00')">00</div>
+            <div class='number' onclick="newInput(0)">0</div>
+            <div class='number' onclick="newInput('.')">.</div>
+            <div id="clear" onclick="removeSingleInput()">C</div>
+            <div id="clear" onclick="removeAllInput()">CA</div>
+            <div id="result" onclick="evaluateFormula()">=</div>
           </div>
         </div>
     </div>
     <script src="js/operations.js"></script>
+    <script src="js/interactions.js"></script>
   </body>
 </html>
