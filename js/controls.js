@@ -85,7 +85,7 @@ function areOperatorsOk(arr){
     }
     //last element cannot be an operator
     if(operators.indexOf(arr[arr.length-1])!=-1){
-        console.log('First character cannot be ' + arr[0]);
+        console.log('last character cannot be ' + arr[0]);
         return 0;
     }
 

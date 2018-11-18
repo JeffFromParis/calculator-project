@@ -11,8 +11,8 @@
   <body>
     <div id="container">
         <header>
-            <h1>Yeah, that's a calculator!</h1>
-            <h1>and a T-rex!</h1>
+            <h1></h1>
+            <h1></h1>
         </header>
         <div id="calculator">
           <div id="model">
@@ -20,27 +20,31 @@
           </div>
           <input id="screen" value=0>
           <div id="keypads">
-            <div class='number' onclick="newInput(7)">7</div>
-            <div class='number' onclick="newInput(8)">8</div>
-            <div class='number' onclick="newInput(9)">9</div>
-            <div class="parenthesis" onclick="newInput('(')">(</div>  
-            <div class="parenthesis" onclick="newInput(')')">)</div>
-            <div class='number' onclick="newInput(4)">4</div>
-            <div class='number' onclick="newInput(5)">5</div>
-            <div class='number' onclick="newInput(6)">6</div>
-            <div class="operator" onclick="newInput('+')">+</div>
-            <div class="operator" onclick="newInput('-')">-</div>
-            <div class='number' onclick="newInput(1)">1</div>
-            <div class='number' onclick="newInput(2)">2</div>
-            <div class='number' onclick="newInput(3)">3</div>
-            <div class="operator" onclick="newInput('*')">*</div>
-            <div class="operator" onclick="newInput('/')">/</div>            
-            <div class='number' onclick="newInput('00')">00</div>
-            <div class='number' onclick="newInput(0)">0</div>
-            <div class='number' onclick="newInput('.')">.</div>
-            <div id="clear" onclick="removeSingleInput()">C</div>
-            <div id="clear" onclick="removeAllInput()">CA</div>
-            <div id="result" onclick="evaluateFormula()">=</div>
+            <div id="numbers">
+              <div class='number' onclick="newInput(7)">7</div>
+              <div class='number' onclick="newInput(8)">8</div>
+              <div class='number' onclick="newInput(9)">9</div>
+              <div class='number' onclick="newInput(4)">4</div>
+              <div class='number' onclick="newInput(5)">5</div>
+              <div class='number' onclick="newInput(6)">6</div>
+              <div class='number' onclick="newInput(1)">1</div>
+              <div class='number' onclick="newInput(2)">2</div>
+              <div class='number' onclick="newInput(3)">3</div>
+              <div class='number' onclick="newInput('00')">00</div>
+              <div class='number' onclick="newInput(0)">0</div>
+              <div class='number' onclick="newInput('.')">.</div>
+            </div>
+            <div id="others">
+              <div class="parenthesis" onclick="newInput('(')">(</div>  
+              <div class="parenthesis" onclick="newInput(')')">)</div>
+              <div class="operator" onclick="newInput('+')">+</div>
+              <div class="operator" onclick="newInput('-')">-</div>
+              <div class="operator" onclick="newInput('*')">*</div>
+              <div class="operator" onclick="newInput('/')">/</div>            
+              <div id="clear" onclick="removeSingleInput()">C</div>
+              <div id="clear" onclick="removeAllInput()">CA</div>
+              <div id="result" onclick="evaluateFormula()">=</div>
+            </div>
           </div>
         </div>
     </div>

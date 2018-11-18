@@ -1,8 +1,6 @@
 hmtl, body{
-    height: 100%;
-    background-color: white;
-    background-image: url("../img/trexandjedi.jpg");
-    background-size: cover;
+    height: 40vh;
+    background-color: rgb(245, 244, 204);
 }
 
 #container{
@@ -10,8 +8,9 @@ hmtl, body{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50vh;
+    transform: translateY(-50%);
     width:90px;
-    height:700px;
 }
 
 #calculator{
@@ -48,21 +47,11 @@ hmtl, body{
     width:100%;
 }
 
-/* #screen input{
-    margin-top:0;
-    margin-bottom:0;
-    padding-right: 10px;
-    text-align: right;
-} */
-
 .number{
     background-color: #768bb1;
 }
 
 #keypads{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
     color: white;
     height:400px;
     font-family: Orbitron;
@@ -71,7 +60,24 @@ hmtl, body{
 #keypads div{
     border-radius:12px;
     font-size: 30px;
+}
+
+#numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    float: left;
+    width: 59%;
     line-height:90px;
+}
+
+#others{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    float: right;
+    width: 39%;
+    line-height:70px;
 }
 
 #keypads:hover{
@@ -83,13 +89,15 @@ hmtl, body{
 }
 
 .operator{
-    background-color: #1de2f0
+    background-color: #1de2f0;
 }
 
 #clear{
-    background-color: #e72b2b
+    background-color: #e72b2b;
 }
 
 #result{
-    background-color: #4ec2df
+    background-color: #4ec2df;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
